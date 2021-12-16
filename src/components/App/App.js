@@ -1,12 +1,12 @@
+import { useState, useEffect } from 'react';
+import { nanoid } from 'nanoid';
+
 import styles from './App.module.css';
 
 import ContactForm from '../ContactForm/ContactForm.jsx';
 import ContactList from '../ContactList/ContactList.jsx';
 import Filter from '../Filter/Filter.jsx';
 import * as storage from '../../services/localStorage';
-
-import { useState, useEffect } from 'react';
-import { nanoid } from 'nanoid';
 
 const STORAGE_KEY = 'contacts';
 
