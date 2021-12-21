@@ -1,6 +1,6 @@
-import styles from './ContactForm.module.css';
-
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+import styles from './ContactForm.module.css';
 
 const ContactForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
@@ -63,6 +63,10 @@ const ContactForm = ({ onSubmit }) => {
       </button>
     </form>
   );
+};
+
+ContactForm.propTypes = {
+  onSubmit: PropTypes.func,
 };
 
 export default ContactForm;
